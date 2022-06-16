@@ -93,5 +93,24 @@ Now, test the website is redirecting or not. If it is redirecting then it will s
 ![image](https://user-images.githubusercontent.com/67600604/173500296-602de65c-7c7c-4ca9-813c-2c25c34e4578.png)
 ![image](https://user-images.githubusercontent.com/67600604/173500402-e69e85a4-0f80-4916-90cf-145b481494d3.png)
 
+To renew the Certificate from let's encrypt
+
+Let’s Encrypt uses the client Certbot to install, manage, and automatically renew the certificates they provide
+
+### sudo certbot renew
+
+If you have multiple certificates for different domains and you want to renew a specific certificate, use
+
+### certbot certonly --force-renew -d page1.ml page7.ml page6.ml
+
+The --force-renew flag tells Certbot to request a new certificate with the same domains as an existing certificate. The -d flag allows you renew certificates for multiple specific domains
+
+To verify that the certificate renewed, run:
+
+### sudo certbot renew --dry-run
+
+If the command returns no errors, the renewal was successfu
+
+
 
 SUCCESFULL 
