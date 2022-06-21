@@ -1,4 +1,4 @@
-# POC3
+# POC-3
 ### Launch WordPress multisite instance.
 ### Configure three different websites, i.e. wpprod.domain1.com, domain1.com, and domain2.com.
 ### Apply SSL on all three websites.
